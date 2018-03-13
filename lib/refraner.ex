@@ -13,6 +13,8 @@ defmodule Refraner do
   end
 
   def add_rating(refran_id, new_rate) do
+    refran_id = id_to_integer(id)
+    new_rate = String.to_integer(new_rate)
     %{rate: rate, total_votos: total_votos} = refran = get_refran_by_id(refran_id)
     {new_rate, new_total_votos} = calculate_new_rate(rate, total_votos, new_rate)
 
