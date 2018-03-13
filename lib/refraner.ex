@@ -9,7 +9,7 @@ defmodule Refraner do
 
   def get_refran_by_id(id) do
     id = id_to_integer(id)
-    Refraner.Model.Refraner |> Refraner.Repo.get(id)
+    Refraner.Model.Refran |> Refraner.Repo.get(id)
   end
 
   def add_rating(_refran_id, _rate) do
