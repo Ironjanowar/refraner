@@ -1,0 +1,6 @@
+[submodule "refraner_server"]
+	path = refraner_server
+	url = https://github.com/ironjanowar/refraner_server
+[submodule "refraner_bot"]
+	path = refraner_bot
+	url = https://github.com/Ironjanowar/refraner_bot
