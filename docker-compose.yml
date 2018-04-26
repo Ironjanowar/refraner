@@ -1,0 +1,13 @@
+version: '3'
+services:
+  refraner_server:
+    build: refraner_server
+    ports:
+      - "4000:4000"
+  refraner_bot:
+    build: refraner_bot
+    environment:
+      - REFRANER_SERVER_HOST="refraner_server"
+      - REFRANER_SERVER_PORT="4000"
+    depends_on:
+      - refraner_server
